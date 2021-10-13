@@ -49,7 +49,7 @@ form .txt_field{
   }
   .txt_field input{
     color: whitesmoke;
-    width: 50rem;
+    /* width: 50rem; */
     padding: 0 5px;
     height: 50px;
     font-size: 20px;
@@ -118,11 +118,6 @@ header{
 }
 
 
-header .logo{
-    height: 50px;
-    font-size: 1.5rem;
-}
-
 header .navbar ul{
     display: flex;
     align-items: center;
@@ -131,7 +126,7 @@ header .navbar ul{
 }
 
 header .navbar ul li a{
-    font-size: 2rem;
+    font-size: 14px;
     margin-left: 2rem;
     color:#fff;
     text-decoration: none !important;
@@ -296,14 +291,13 @@ header #menu{
     /* background-image: url('/images/coco-Benefits.jpg'); */
 }
 .benefit img{
-    padding-left: 7%;
+    /* padding-left: 5%; */
     max-width: 100%;
-    height: 90vh;
 }
 
 .fact{
     min-height: 100vh;
-    /* background-: cover; */
+    padding-bottom: 90px;
     font-size: 20px;
     width: 100%;
     background-size: contain;
