@@ -6,14 +6,21 @@
     <title>COCONERO</title>
 
     <!-- google fonts css file link  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
     <!-- bootstrap cdn link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" rel="stylesheet">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
@@ -25,18 +32,31 @@
 
 <header>
 
-    <a href="#" ><img class="logo" src="images/logo.png" alt width=></a>
+    <a href="#" >
+        <img  style=" height: 90px; float: left;" class="logo" src="images/nero-logo-r.png" alt="">
+    </a>
 
     <div id="menu" class="fas fa-bars"></div>
 
-    <nav class="navbar">
-        <ul>
-            <li><a class="active" href="#home">home</a></li>
-            <li><a href="#product">product</a></li>
-            <li><a href="#benefit">Health Benifits</a></li>
-            <li><a href="#fact">Nutrition Facts</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
+    <nav class="navbar" style="flex-direction: column; padding-top:2%; padding-bottom: 1%;">
+        <div class="nav-icon" style="margin-left: auto;">
+            <ul class="icon" style="font-size: 25px; color:lightslategrey; padding-bottom: 4%;">
+                <li style="padding-right: 3px;"><a href=""><i class="fab fa-facebook-f"></a></i></li>
+                <li style="padding-right: 3px;"><a href=""><i class="fab fa-instagram"></a></i></li>
+                <li style="padding-right: 3px;"><a href=""><i class="fab fa-twitter"></a></i></li>
+                <li style="padding-right: 3px"><a href=""><i class="fab fa-pinterest"></a></i></li>
+                <li style="padding-right: 3px"><a href=""><i class="fab fa-youtube"></a></i></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="option">
+                <li style="padding-left: 30px;"><a class="active" href="#home">Home</a></li>
+                <li style="padding-left: 30px;"><a href="#product">Product</a></li>
+                <li style="padding-left: 30px;"><a href="#benefit">Health Benifits</a></li>
+                <li style="padding-left: 30px;"><a href="#fact">Nutrition Facts</a></li>
+                <li style="padding-left: 30px;"><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
     </nav>
 
 </header>
@@ -48,24 +68,27 @@
 <section class="home" id="home">
 
     <div class="content">
-        <p>Delivered to your doorstep within 48 hours of plucking, NeroCoco is truly a nature's gift that packed and served exclusively for you. </p>
+        <p style="font-size: 25px;">Delivered to your doorstep within 48 hours of plucking, NERO<b>COCO</b> is truly a nature's gift that packed and served exclusively for you. </p>
         <div class="sub-content">
-            <p>We are launching exclusively to a small group of 100 indiviuals on first come, first server basis. Be one of the first few to try. Share your email to enroll now</p>
+            <p style="font-size: 18px;">We are presently serving for Friends, Family, and extended Fraternity on first come, first served basis. Enroll below with your email address to register your interest on NERO<strong>COCO</strong> and to receive the launch offer when we go live. We will get you NERO-ed soon...!</p>
         </div>
-        <a href="#"><button class="btn">Try Now!</button></a>
-        <div class="center">
-            <form onsubmit="">
-              <div class="txt_field">
-                <input type="email" name="email" required>
-                <span></span>
-                <label for="email">Email</label>
+        <div class="container">
+          <div class="form-inline" >
+              <div>
+                  <input type="email" placeholder="email" style="  font-size: 15px;
+                  width: 37%;
+                  padding: 1%;
+                  border-radius: 12px;
+                  margin-top: 3%; margin-right: 2%;
+                  background-color: #989898;">
+                  <button class="btn btn-secondary">Try now</button>
               </div>
-            </form>
           </div>
-        
+      </div>
     </div>
     <div class="image">
-        <img src="images/coco1.png" alt="">
+        <img src="images/coco.jpeg" alt="">
+        
     </div>
 
 </section>
@@ -75,36 +98,36 @@
 
 <!-- About Product section starts  -->
 
-<section class="product" id="product">
+<section class="product" id="product" style="padding-top: 5%;">
 
 <!-- <h1 class="heading">About Product</h1><br> -->
 <section class="boxes" id="health">
     <div class="box">
         <div class="image">
-            <img src="images/coconut.png" alt="">
+            <img src="images/coconut.png" alt="" style="padding-bottom: 20px;"><br>
         </div>
-      <h3>Freshness Guaranteed</h3><br>
-      <p>The coconuts that you order will be flown from Kerala to your doorstep in a temperature-controlled environment in 48 hours or less to ensure freshness!</p>
+      <h3>Freshness<br> Guaranteed</h3><br>
+      <p>The coconuts that you order will be flown from the fields to your doorstep in a temperature-controlled environment within 48 hours or less to ensure freshness!</p>
     </div>
     <div class="box">
         <div class="image">
-            <img src="images/organic.png" alt="">
+            <img src="images/natural.png" alt="" style="padding-bottom: 20px;"><br>
         </div>
-      <h3>100% Organic</h3><br>
+      <h3>100% <br>Natural</h3><br>
       <p>We bring to you 100% pure and fresh coconuts that do not contain any added preservatives or chemicals. </p>
     </div>
     <div class="box">
         <div class="image">
-            <img src="images/medal.png" alt="">
+            <img src="images/medal.png" alt="" style="padding-bottom: 20px;"><br>
         </div>
-      <h3>Quality Guaranteed</h3><br>
+      <h3>Quality<br> Guaranteed</h3><br>
       <p>NeroCOCO's 40+ years of legacy & knowledge ensures that you receive coconuts that are organically grown to perfection.</p>
     </div>
     <div class="box">
         <div class="image">
-            <img src="images/give-love.png" alt="">
+            <img src="images/health-care.png" alt="" style="padding-bottom: 20px;"><br>
         </div>
-      <h3>Our Promise</h3><br>
+      <h3>Our <br>Promise</h3><br>
       <p>It is our promise that each fruit contains 300-450 ml of refreshing coconut water and a thick layer of cream for you to relish.</p>
     </div>
   </section>
@@ -116,31 +139,47 @@
 <!-- benefit section ends -->
 <div class="col-md-12">
     <section class="benefit" id="benefit">  
+        <ul>
+            <li>Diabetic friendly</li>
+            <li>full of antoxident</li>
+            <li>prevent kidney stone</li>
+            <li>relief from headache</li>
+            <li>healthy skin</li>
+            <li>boosts hydration</li>
+            <li>BENefits hair growth strength bones</li>
+        </ul>
     <!-- <h1 class="heading">Benefits</h1> -->
-    <img src="images/coco-Benefits.jpg" alt="" srcset="">
+    <img src="images/coco.jpeg" alt="" srcset="">
+    <div class="col-md-12 mt-10 text-center"style="color: #fff; padding-bottom:5% ;font-size:40px;">
+        <p>SAY YES TO HEALTH!</p>
+        <p style="font-size: 50%;">from the tree to your glass</p>
+    </div>
+    <!-- <img src="images/coco-Benefits.jpg" alt="" srcset=""> -->
     </section>
 </div>
-
 <!-- benefit section ends -->
 
 
 <!-- Nutrition Fact section starts  -->
-
 <section class="fact" id="fact">
+    <div class="col-md-12 row" style="color: white;">
+       
+        <table  class="table" style="border-bottom-width:0.5px; width: 100%;  margin-right: 80px;">
+            <caption style="text-align:left; caption-side: top;">Amount Per 
+            <form name="formid" id="formid">
+                <select name="ddlselect" > 
+                    <button class="btn btn-secondary dropdown-toggle">Select amount</button>
+                    <option value="1 tbsp (15 g)">1 tbsp (15 g)</option>
+                    <option value="100 grams">100 grams</option>
+                    <option value="1 coconut yields (206 g)">1 coconut yields (206 g)</option>
+                    <option value="1 cup (240 g)">1 cup (240 g)</option>
+                </select>
+            </form>
+            <label id="lblmsg"></label></caption>
 
-<!-- <h1 class="heading">Nutrition Facts</h1> -->
-
-<div class="col-md-12 row" style="padding-top: 120px; color: white;">
-    <div class="col-md-4 mt-10 text-center"style="font-size:40px; margin:top 12px">
-        <p style="margin-top: 100px;">SAY YES TO HEALTH!</p>
-        <p style="font-size: 50%;">from the tree to your glass</p>
-    </div>
-    <div class="col-md-7 mt-10">
-        <table align="right" class="table" style="border-bottom-width:0.5px; width: auto;  margin-right: 80px;">
-            <caption style="text-align:left; caption-side: top;">Amount Per 100 grams</caption>
-                <thead class="thead-light">
+                <thead class="thead-light" id="table-content">
                 <tr>
-                    <td>Calories 354</td>
+                    <td>Calories 3</td>
                     <td> </td>
                     <td> </td>
                     <td> </td>
@@ -152,14 +191,14 @@
                     <td> </td>
                 </tr>
                 <tr>
-                    <td>Total Fat 0.2 g	 </td>
+                    <td>Total Fat 0.0 g	 </td>
                     <td>0% </td>
                     <td> </td>
                     <td> </td>            
                 </tr>
                 <tr>
-                    <td>Saturated fat 0.2 g</td>
-                    <td>1%</td>
+                    <td>Saturated fat 0.0 g</td>
+                    <td>0%</td>
                     <td> </td>
                     <td> </td>            
                 </tr>
@@ -170,57 +209,57 @@
                     <td> </td>
                 </tr>
                 <tr>
-                    <td>Sodium 105 mg</td>
-                    <td>4% </td>
+                    <td>Sodium 15.7 mg</td>                    
+                    <td>0% </td>
                     <td></td>
                     <td></td> 
                 </tr>
                 <tr>
-                    <td>Potassium 250 mg</td>
-                    <td>7% </td>
+                    <td>Potassium 37.5 mg</td>
+                    <td>1% </td>
                     <td></td>
                     <td></td> 
                 </tr>
                 <tr>
-                    <td>Total Carbohydrate 3.7 g</td>
-                    <td>1%</td>
+                    <td>Total Carbohydrate 0.6 g</td>
+                    <td>0%</td>
                     <td></td>
                     <td></td>   
                 </tr>
                 <tr>
-                    <td>Dietary fiber 1.1 g	</td>
-                    <td>4%</td>
+                    <td>Dietary fiber 0.2 g	</td>
+                    <td>0%</td>
                     <td></td>
                     <td></td> 
                 </tr>
                 <tr>
-                    <td style="width: 45%;">Sugar 2.6 g	</td>
+                    <td style="width: 45%;">Sugar 0.4 g	</td>
                     <td style="width: 20%;"></td>
                     <td style="width: 10px;"></td>
                     <td></td> 
                 </tr>
                 <tr>
-                    <td>Protein 0.7 g</td>
-                    <td>1%</td>
+                    <td>Protein 0.1 g</td>
+                    <td>0%</td>
                     <td></td>
                     <td></td> 
                 </tr>
                 <tr>
                     <td>Vitamin C</td>
-                    <td>4%</td>
+                    <td>0%</td>
                     <td>Calcium</td>
-                    <td>2%</td> 
+                    <td>0%</td> 
                 </tr>
                 <tr>
                     <td>Iron</td>
-                    <td>4%</td>
+                    <td>0%</td>
                     <td>Vitamin D</td>
                     <td>0%</td> 
                 </tr>
                 <tr>
                     <td>Vitamin B-6</td>
                     <td>0%</td>
-                    <td>cobalamin</td>
+                    <td>Cobalamin</td>
                     <td style="width: 10%;">0%</td> 
                 </tr>
                 <tr>
@@ -232,67 +271,54 @@
                 <caption style="color: white; font-size: 10px;">*Per cent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</caption>
             </tbody>
         </table>
-        </div>
     </div>
-
-
 </section>
-
 <!-- Nutrition facts section ends -->
 
 <!-- blog section starts  -->
-
-<section class="blog" id="blog">
-
-<!-- <h1 class="heading">Blogs</h1> -->
-<div class="container mx-auto mt-4" style="padding-top: 120px;">
+<section class="boxes blog" id="blog" style="padding-left: 5%;">
+<div class="container mx-auto mt-4">
     <div class="row">
-        <div class="col-md-4">
-            <div class="card" style="width: 35rem; padding: 1px;">
-                <img src="images/water.jpg" class="card-img-top" alt="..." style="height: 200px;">
+        <div class="col-lg-4 box">
+            <div class="card" style="padding: 1px;border:none; ">
+                <h6 class="card-subtitle mb-2"style="font-size:18px; padding-bottom:5%">Health Benefits of  having Coconut Water</h6>
+                <img src="images/1.png" class="card-img-top" alt="..." >
                 <div class="card-body">
-                    <h5 class="card-title" style="font-size:25px;">Water</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Health Benefits of Coconut Water</h6>
-                    <p class="card-text"style="font-size:12px;">Coconut water has grown in popularity over the past few years, but this beverage dubbed....</p>
-                    <a href="https://www.goodhousekeeping.com/health/diet-nutrition/a33606419/coconut-water-health-benefits/" class="btn mr-2"><i class="fas fa-link"></i>Read More</a>
+                    <p class="card-text text-muted"style="font-size:15px;">Coconut water has grown in popularity over the past few years, but this beverage dubbed "nature's sports drink" has been around for centuries. Packed with...</p>
+                    <a href="water.html" target="__blank" class="btn mr-2" style="font-family: Sulphur point;">Read More</a>
                 </div>
             </div>
         </div>    
-
-        <div class="col-md-4">
-            <div class="card" style="width: 35rem;  padding: 1px;">
-                <img src="images/malai.jpg" class="card-img-top" alt="..." style="height: 200px; ">
+        <div class="col-lg-4 box">
+            <div class="card" style=" padding: 1px;border:none; ">
+                <h6 class="card-subtitle mb-2 "style="font-size:18px;  padding-bottom:5%">Reasons Why You Should Eat Coconut Malai</h6>
+                <img src="images/2.png" class="card-img-top" alt="..." >
                 <div class="card-body">
-                    <h5 class="card-title" style="font-size:25px;">Malai</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Reasons Why You Should Eat Coconut Malai</h6>
-                    <p class="card-text" style="font-size:12px;">Coconut malai has cooling properties that helps to keep our body cool and refreshed. It is...</p>
-                    <a href="https://timesofindia.indiatimes.com/life-style/food-news/here-are-5-reasons-why-you-should-eat-coconut-malai-this-summer/photostory/83849420.cms?picid=83849664" class="btn mr-2"><i class="fas fa-link"></i>Read More</a>
+                    <p class="card-text text-muted" style="font-size:15px;">Coconut malai has cooling properties that helps to keep our body cool and refreshed. It is one of the best natural and healthy ways of keeping our body...</p>
+                    <a href="malai.html" target="__blank" class="btn mr-2"></i>Read More</a>
                 </div>
             </div>
         </div>   
-        <div class="col-md-4">
-            <div class="card" style="width: 35rem;  padding: 1px;">
-                <img src="images/sportsDrink.jpg" class="card-img-top" alt="..."style="height: 200px;" >
+        <div class="col-lg-4 box">
+            <div class="card" style=" padding: 1px;border:none;">
+                <h6 class="card-subtitle mb-2 "style="font-size:18px; padding-bottom:5%">Coconut Water Could Replace Your Sports Drink</h6>
+                <img src="images/3.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title" style="font-size:25px;">Replace Sports drink</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Coconut Water Could Replace Your Sports Drink</h6>
-                    <p class="card-text" style="font-size:12px;">Coconut water has taken over the shelves of grocery stores in the past few years, and...</p>
-                    <a href="https://www.livescience.com/46368-coconut-water-health-benefits.html" class="btn mr-2"><i class="fas fa-link"></i>Read More</a>
+                    <p class="card-text text-muted" style="font-size:15px;">Coconut water has taken over the shelves of grocery stores in the past few years, and nutritionists say that some of the hype may in fact...</p>
+                    <a href="sportsdrink.html" target="__blank" class="btn mr-2"></i>Read More</a>
                 </div>
             </div>
         </div>      
-     
     </div>
 </div>
 
 </section>
-
 <!-- blog section ends -->
-<!-- footer section starts  -->
 
+<!-- footer section starts  -->
 <div class="footer">
-    <h1 class="credit">©2021-2022 NeroAvenue | All Rights Reserved </h1>
-    <h1 class="design-credit">Designed, Developed and Maintained by SuperMark Agency</h1>
+    <h6 class="credit">©2021-2022 NeroAvenue | All Rights Reserved </h6>
+    <h6 class="design-credit">Designed, Developed and Maintained by SuperMark Agency</h6>
 </div>
 
 <!-- footer section ends -->
